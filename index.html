@@ -1443,7 +1443,7 @@
                 var a = t.dataset.a
                   , x = t.dataset.v;
                 if (a === "mode") {
-                    S.mode = x;
+                    S.mode = S.mode === x ? null : x;
                     S.p = null;
                     S.c = null;
                     render()
